@@ -7,7 +7,8 @@ from ezdxf.addons.drawing.matplotlib import MatplotlibBackend
 from PIL import Image
 
 # フォルダパスを指定（適宜変更）
-folder_path = "C:/Users/yasud/Documents/src2"
+folder_path = "C:/Users/yasud/Documents/backend_result"
+# 変更したいDXFファイル
 dxf_files = ["test_file1_answer.dxf", "test_file2_answer.dxf"]
 
 for dxf_file in dxf_files:
