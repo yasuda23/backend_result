@@ -2,7 +2,6 @@ import os
 import ezdxf
 import matplotlib.pyplot as plt
 import japanize_matplotlib
-import matplotlib.font_manager as fm
 from ezdxf.addons.drawing import RenderContext, Frontend
 from ezdxf.addons.drawing.matplotlib import MatplotlibBackend
 from PIL import Image
@@ -46,7 +45,7 @@ for dxf_file in dxf_files:
         
         # 描画実行
         Frontend(ctx, backend).draw_layout(msp)
-        fig.savefig(png_path, dpi=300, bbox_inches='tight')
+        fig.savefig(png_path, dpi=800)
         plt.close(fig)
 
         # 色反転処理
